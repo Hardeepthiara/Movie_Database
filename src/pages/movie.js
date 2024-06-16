@@ -41,12 +41,10 @@ const MovieDetail = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <Image
+            <img
             src={movie.Poster}
             alt={movie.Title}
             className="img-fluid rounded-start"
-            width={400}  // Specify the width of the image
-            height={600} // Specify the height of the image
             />          
           </div>
           <div className="col-md-8">
