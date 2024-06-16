@@ -9,3 +9,4 @@ const MovieList = ({ movies }) => (
 );
 
 export default MovieList;
+//add movie list

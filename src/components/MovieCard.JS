@@ -14,3 +14,4 @@ const MovieCard = ({ movie }) => (
 );
 
 export default MovieCard;
+//Add the movie card
