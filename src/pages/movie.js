@@ -2,6 +2,7 @@
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const MovieDetail = () => {
   const router = useRouter();
@@ -40,7 +41,13 @@ const MovieDetail = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src={movie.Poster} className="img-fluid rounded-start" alt={movie.Title} />
+            <Image
+            src={movie.Poster}
+            alt={movie.Title}
+            className="img-fluid rounded-start"
+            width={400}  // Specify the width of the image
+            height={600} // Specify the height of the image
+            />          
           </div>
           <div className="col-md-8">
             <div className="card-body">
